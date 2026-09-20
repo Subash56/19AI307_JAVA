@@ -1,25 +1,60 @@
-# Ex.No:1(A) CLASS & OBJECTS
+# Ex.No:1(A) INTRODUCTION TO JAVA PROGRAMMING, DATA TYPES, VARIABLES AND OPERATORS
+
+## QUESTION:
+Lovely has mastered printing in Java, and now she wants to learn how arithmetic operators work. She’s curious about how Java can add, subtract, multiply, divide, and find remainders of two numbers.
+
+Write a Java program that:
+
+Accepts two integer numbers from the user.
+
+Demonstrates all 5 arithmetic operations:
+
+Addition (+)
+
+Subtraction (-)
+
+Multiplication (*)
+
+Division (/)
+
+Modulus (%)
+
+Displays the result of each operation in a separate line with a clear message.
 
 ## AIM:
-To create a class named 'Student' with String variable 'name' and String variable 'address'.
+
+To write a Java program that reads two integer numbers from the user and performs basic arithmetic operations such as addition, subtraction, multiplication, division, and modulus, and displays the results.
 
 ## ALGORITHM :
-1.	Start the program.
-2.	Define a class named 'Student'
-3.	Declare a String variable 'name' and initialize it with the value "John"
-4.	Declare a String variable 'address' and initialize it with the value "Chennai"
-5.	Define a class named 'Test'
-6.	Define the 'main' method within the 'Test' class
-7.	Create an object 'obj' of the 'Student' class
-8.	Print the value of 'name' and 'address' variables of the 'obj' object
-9.	End
+
+
+Start the program.
+
+Create an object of the Scanner class to take input from the user.
+
+Read the first integer input from the user and store it in variable num1.
+
+Read the second integer input from the user and store it in variable num2.
+
+Calculate the sum of num1 and num2, and display the result.
+
+Calculate the difference (num1 - num2), and display the result.
+
+Calculate the product of num1 and num2, and display the result.
+
+Calculate the quotient of num1 divided by num2, and display the result.
+
+Calculate the remainder of num1 divided by num2, and display the result.
+
+Close the Scanner object.
+
 
 
 
 ## PROGRAM:
  ```
 /*
-Program to implement a class & objects using Java
+Program to implement variables and Operators using Java
 Developed by: SUBASH B
 RegisterNumber: 212224220108
 */
@@ -27,29 +62,33 @@ RegisterNumber: 212224220108
 
 ## Sourcecode.java:
 
-```
-class Student
-{
-    String name;
-    String address;
-}
-public class Main
-{
-    public static void main(String[] args)
-   {
-        Student obj= new Student();        
-        obj.name="John";
-        obj.address="Chennai";
-        System.out.println(obj.name+" "+obj.address);
+    import java.util.Scanner;
+    
+    public class ArithmeticOperations {
+        public static void main(String[] args) {
+            Scanner sc = new Scanner(System.in);
+    
+            int num1 = sc.nextInt();
+            int num2 = sc.nextInt();
+    
+            System.out.println("Sum = " + (num1 + num2));
+            System.out.println("Difference = " + (num1 - num2));
+            System.out.println("Product = " + (num1 * num2));
+            System.out.println("Quotient = " + (num1 / num2));
+            System.out.println("Remainder = " + (num1 % num2));
+    
+            sc.close();
+        }
     }
-}
-```
+
+
+
+
 
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/4eeffebe-7759-467e-bf87-ccd21a978cdf)
+<img width="692" height="287" alt="image" src="https://github.com/user-attachments/assets/b9ecf71b-325c-4c72-a6e6-ce3ad8b4ba11" />
+
+
 
 ## RESULT:
-Thus, the class named 'Student' with String variable 'name' and String variable 'address' was created successfully.
-
-
-
+Therefore the program has been executed successfully.
