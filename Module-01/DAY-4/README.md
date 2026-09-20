@@ -1,71 +1,68 @@
-# Ex.No:1(D) USER DEFINED METHOD.
+# Ex.No:1(D) ARRAYS
+
+## QUESTION:
+
+Write a Java program to find the index of a given element in an array
 
 ## AIM:
-To write a Java program to calculate and print the area of a circle by defining an instance method and using local variables. The class name is Area, the method name is calculateArea(), and the return type is void.
+
+To write a Java program that reads an array of integers and finds the index of a given element within the array.
+
 
 ## ALGORITHM :
-1. Start the program.
 
-2. Import the `java.util` package.
+1.Start the program and read the size of the array n.
 
-3. Define a class named `Area`.
+2.Read n integer elements and store them in the array a[ ].
 
-4. Declare an instance method named `calculateArea()` with return type `void`.
+3.Read the element x whose index needs to be found.
 
-5. Inside the method:
-   
-   a) Create a `Scanner` object to read user input.
-   
-   b) Declare local variables `radius` and `cirarea`.
-   
-   c) Read the radius value from the user.
-   
-   d) Calculate the area using the formula `3.14 * radius * radius`.
-   
-   e) Print the calculated area.
+4.Traverse the array from index 0 to n-1:
 
-6. In the `main` method:
-   
-   a) Create an object of the `Area` class.
-   
-   b) Call the `calculateArea()` method using the object.
+If a[i] == x, print the index i and terminate the program.
+5.If the loop finishes without a match, print "Element not found".
 
-7. End the program.
-
-
-
-
+6.End the program.
 
 ## PROGRAM:
- ```
-/*
-Program to implement a User Defined Method using Java
-Developed by: SUBASH B
-RegisterNumber: 212224220108
-*/
-```
 
-## Sourcecode.java:
-```   
-import java.util.*;
-public class Area {
-        double calculateArea()
-    {
-        double radius,cirarea;
-        Scanner sc=new Scanner(System.in);
-        radius=sc.nextDouble();
-        cirarea=3.14*radius*radius;
-        return cirarea;
-    }
+## SOURCE CODE:
+
+    import java.util.Scanner;
+    
+    public class Main {
         public static void main(String[] args) {
-       Area obj=new Area();
-       double area=obj.calculateArea();
-       System.out.println("Area of Circle is "+area);
+            Scanner sc = new Scanner(System.in);
+            int n = sc.nextInt();
+            int a[] = new int[n];
+            for (int i = 0; i < n; i++) 
+            {
+            a[i] = sc.nextInt();
+            }
+            
+            int x = sc.nextInt();
+            for (int i = 0; i < n; i++) {
+                if (a[i] == x) {
+                    System.out.println(i);
+                    return;
+                }
+                
+            }
+            System.out.println("Element not found");
+            
+        }
     }
-}
-```
+
+
+
+
+
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/ed252e49-6612-47ca-b513-113432021f3c)
+
+<img width="620" height="638" alt="image" src="https://github.com/user-attachments/assets/091f12b6-5fbe-4617-ad27-d1a408c883f9" />
+
 
 ## RESULT:
-Thus, the Java program to calculate the area of a circle using an instance method and local variables with a void return type is successfully created and executed.
+Therefore the program successfully searches the array for the given element.
+
+
