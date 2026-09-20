@@ -1,53 +1,49 @@
-# Ex.No:1(E)  STATIC VARIABLE
+# Ex.No:1(E) STRINGS AND MATH FUNCTION
+
+## QUESTION:
+
+Write a Java program to find the absolute value of a number using Math.abs().
+
 
 ## AIM:
-To write a Java program that determines whether a given number is odd or even using a static method. The input number is passed directly to the method, and the result is printed using simple conditional logic.
+
+To write a Java program that finds the absolute value of a given number using the Math.abs() method.
+
 
 ## ALGORITHM :
-1. Start the program.
 
-2. Define a class named `Main`.
+1.Start the program and create a Scanner object.
 
-3. In the `main()` method:
-   a) Declare an integer variable `num` and assign it the value `7`.
-   b) Call the static method `find_Oddeven(num)` and pass `num` as an argument.
+2.Read a number n (can be integer or decimal) from the user.
 
-4. Define a static method named `find_Oddeven(int num)`:
-   a) Check if `num % 2 == 0`.
-      - If true, print "`num` is even".
-      - Otherwise, print "`num` is odd".
+3.Use the built-in function Math.abs(n) to compute its absolute value.
 
-5. End the program.
+4.Display the calculated absolute value.
+
+5.End the program.
 
 
 ## PROGRAM:
- ```
-/*
-Program to implement a Static Variable using Java
-Developed by: SUBASH B
-RegisterNumber: 212224220108
-*/
-```
 
-## Sourcecode.java:
-```
-import java.util.Scanner;
-public class Main{
-public static void main (String[] args){
-int num=7;
-find_Oddeven(num);
-}
+## SOURCE CODE:
 
-static void find_Oddeven(int num){
-  if(num%2==0) 
-      System.out.println(num+" is even"); 
-  else 
-      System.out.println(num+" is odd");
- }
-}
-```
+    import java.util.*;
+    public class demo
+    {
+        public static void main(String[] args)
+        {
+            Scanner sc=new Scanner(System.in);
+            double n=sc.nextDouble();
+            System.out.println("Absolute value = "+Math.abs(n));
+        }
+    }
+
+
 ## OUTPUT:
-![image](https://github.com/user-attachments/assets/8f7cdb15-9d19-4cc3-8d20-2c0a25af9899)
+
+<img width="813" height="256" alt="image" src="https://github.com/user-attachments/assets/ad7d743a-66aa-4ce4-893e-0ba44fa05df9" />
+
 
 ## RESULT:
-Thus, the Java program to check whether a number is odd or even using a static method with a fixed input value (7) is successfully created and executed.
+Therefore the program successfully reads a number and calculates its absolute value.
+
